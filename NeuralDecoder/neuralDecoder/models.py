@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import Model
+from keras import Model
 
 
 class GRU(Model):

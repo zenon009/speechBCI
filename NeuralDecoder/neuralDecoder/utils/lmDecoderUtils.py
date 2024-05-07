@@ -6,7 +6,8 @@ from tqdm.notebook import trange, tqdm
 import tensorflow as tf
 
 import lm_decoder
-import neuralDecoder.utils.rnnEval as rnnEval
+
+from NeuralDecoder.neuralDecoder.utils import rnnEval
 
 '''
 Neural Language Model Utils
@@ -66,6 +67,7 @@ def gpt2_lm_decode(model, tokenizer, nbest, acousticScale, lengthPenlaty, alpha,
     hypotheses = []
     acousticScores = []
     oldLMScores = []
+    # out is every output in nbest
     for out in nbest:
         hyp = out[0].strip()
         if len(hyp) == 0:

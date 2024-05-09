@@ -3,7 +3,7 @@
 
 if __name__=="__main__":
     # formats the competitionData into tfRecords for RNN training, including blockwise feature normalization
-    baseDir = '/home/wrb15144/speechPaperRelease_08_20/'
+    baseDir = '/vol/bulkdata/wrb15144/competitionLogData/'
 
     import os
 
@@ -16,6 +16,6 @@ if __name__=="__main__":
 
     for sessIdx in range(len(blockLists)):
         sessionName = blockLists[sessIdx][0]
-        dataPath = "/vol/fastdata/decoder_data/BrainTranslationCompetition/competitionData/"
+        dataPath = "/vol/bulkdata/wrb15144/decoder_data/competitionData/"
         tfRecordFolder = baseDir + '/derived/tfRecords/' + sessionName
         makeTFRecordsFromCompetitionFiles(sessionName, dataPath, tfRecordFolder)

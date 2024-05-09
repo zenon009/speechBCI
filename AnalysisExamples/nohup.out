@@ -1,0 +1,57 @@
+2024-05-09 13:19:49.746324: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2024-05-09 13:19:49.746359: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /home/wrb15144/nltk_data...
+Traceback (most recent call last):
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/g2p_en/g2p.py", line 22, in <module>
+    nltk.data.find('taggers/averaged_perceptron_tagger.zip')
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/nltk/data.py", line 583, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger.zip[0m
+
+  Searched in:
+    - '/home/wrb15144/nltk_data'
+    - '/vol/bulkdata/wrb15144/speechBCI/venv/nltk_data'
+    - '/vol/bulkdata/wrb15144/speechBCI/venv/share/nltk_data'
+    - '/vol/bulkdata/wrb15144/speechBCI/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/vol/bulkdata/wrb15144/speechBCI/AnalysisExamples/prepare_data.py", line 12, in <module>
+    from makeTFRecordsFromSession import makeTFRecordsFromCompetitionFiles
+  File "/vol/bulkdata/wrb15144/speechBCI/AnalysisExamples/makeTFRecordsFromSession.py", line 7, in <module>
+    from g2p_en import G2p
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/g2p_en/__init__.py", line 1, in <module>
+    from .g2p import G2p
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/g2p_en/g2p.py", line 24, in <module>
+    nltk.download('averaged_perceptron_tagger')
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/nltk/downloader.py", line 777, in download
+    for msg in self.incr_download(info_or_id, download_dir, force):
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/nltk/downloader.py", line 642, in incr_download
+    yield from self._download_package(info, download_dir, force)
+  File "/vol/bulkdata/wrb15144/speechBCI/venv/lib/python3.9/site-packages/nltk/downloader.py", line 699, in _download_package
+    os.makedirs(download_dir)
+  File "/home/wrb15144/.pyenv/versions/3.9.19/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 28] No space left on device: '/home/wrb15144/nltk_data'
+2024-05-09 13:26:52.145864: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2024-05-09 13:26:52.145894: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[nltk_data] Downloading package cmudict to /home/wrb15144/nltk_data...
+[nltk_data]   Unzipping corpora/cmudict.zip.

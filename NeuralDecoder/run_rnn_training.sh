@@ -6,4 +6,4 @@ python3 -m neuralDecoder.main \
     learnRateStart=0.02 \
     model.nUnits=1024 \
     model.stack_kwargs.kernel_size=32 \
-    outputDir=/home/wrb15144/speechPaperRelease_08_20//derived/rnns/baselineRelease
+    outputDir=/vol/bulkdata/wrb15144/competitionLogData/derived/rnns/baselineRelease

@@ -1,3 +1,3 @@
 import os
-baseDir = '/home/wrb15144/speechPaperRelease_08_20/'
+baseDir = '/vol/bulkdata/wrb15144/competitionLogData/'
 os.makedirs(baseDir+'/derived/rnns', exist_ok=True)
